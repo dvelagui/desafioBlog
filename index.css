@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(228, 225, 233);
+}
+
+.back_cabecera {
+  background: #055240;
+}
+
+.contenedor {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background: #7dcd40;
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.bu .menu {
+  display: inline-block;
+}
+
+.menu li {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+.menu li:after {
+  content: "|";
+}
+
+.menu li:last-child:after {
+  display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding-top: 20px;
+  padding: 20px 11px 0 11px;
+}
+
+.menu a:hover {
+  /*box-shadow: inset 0 5px 0 red;*/
+  border-top: 5px solid red;
+}
+
+.menu a:active {
+  /*box-shadow: inset 0 5px 0 rgb(30, 228, 55);*/
+  border-top: 5px solid rgb(30, 228, 55);
+}
+
+.buscar {
+  margin: 10px;
+}
+
+.paisaje {
+  background-image: url("images/paisaje.jpeg");
+  height: 584px;
+  position: relative;
+}
+
+.comentario {
+  color: black;
+  padding-top: 350px;
+  padding-right: 500px;
+  padding-left: 30px;
+  margin: 0;
+  position: relative;
+}
+
+.recuadro {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  height: 175px;
+}
+
+.com {
+  font-size: 22px;
+  color: #39383c;
+}
+
+.autora {
+  font-size: 30px;
+  color: #39383c;
+  margin-top: 20px;
+}
+
+.subtitulo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.transicion {
+  transition: 0.5s;
+}
+
+.filas {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: black;
+}
+
+.imagen {
+  opacity: 0.5;
+}
+
+.imagen:hover {
+  opacity: 1;
+  width: 500px;
+  height: 400px;
+}
+
+.titulo:hover {
+  transform: rotate(0deg) scale(2) skew(5deg) translate(60px);
+}
+
+a, h3 {
+  text-decoration: none;
+  font-size: 22px;
+  font-display: swap;
+  color: rgb(237, 134, 34);
+}
+
+.paginador {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+.paginador ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.paginador li {
+  background: #eaeaea;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  border: 1px solid gray;
+  margin: 0 5px;
+}
+
+.paginador a {
+  text-decoration: none;
+  color: gray;
+}
+
+.paginador li.selected {
+  border-color: transparent;
+  background: white;
+}
+
+.autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  border-top: 1px solid gray;
+  padding-top: 15px;
+}
+
+.autor img {
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.autor p {
+  margin: 0;
+}
+
+.paginador span {
+  color: gray;
+  font-size: 20px;
+  font-weight: 600;
+}
